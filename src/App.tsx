@@ -4,6 +4,7 @@ import "./App.css";
 import HeaderMenu from "./components/HeaderMenu";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
+import MyProfile from "./components/MyProfile";
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
         <HeaderMenu />
         <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/current-polls" element={<CurrentPolls />} />
-        <Route path="/create-poll" element={<CreatePoll />} />
+        <Route path="/my-profile" element={<MyProfile />} />
+        {/* <Route path="/create-poll" element={<CreatePoll />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/log-in" element={<Login />} />
